@@ -51,5 +51,5 @@ int main() {
     printf("PIB: %.2f\n", carta2.pib);
     printf("Pontos turísticos: %d\n", carta2.pontos_turisticos);
 
-    return 0;
+    return 0;;
 }
