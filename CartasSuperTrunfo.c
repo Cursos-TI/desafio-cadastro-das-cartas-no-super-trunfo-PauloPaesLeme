@@ -1,55 +1,74 @@
 #include <stdio.h>
-
-// Estrutura para armazenar os atributos das cartas
-struct Carta {
-    char codigo[4]; // Código da carta (ex: A01, B02)
-    int populacao;
-    float area;
-    float pib;
-    int pontos_turisticos;
-};
+#include <stdlib.h>
 
 int main() {
-    struct Carta carta1, carta2;
+    char estado_c1;
+    char estado_c2;
+    char codigo_c1[50];  
+    char codigo_c2[50];  
+    char cidade_c1[50];  
+    char cidade_c2[50];  
+    int populacao_c1;
+    int populacao_c2;
+    int pontos_c1;
+    int pontos_c2;
+    float area_c1;
+    float area_c2;
+    float pib_c1;
+    float pib_c2;
 
     // Cadastro da primeira carta
-    printf("Digite o código da primeira carta: ");
-    scanf("%s", carta1.codigo);
-    printf("Digite a população da primeira carta: ");
-    scanf("%d", &carta1.populacao);
-    printf("Digite a área da primeira carta: ");
-    scanf("%f", &carta1.area);
+    printf("Cadastro da Primeira Carta:\n");
+    printf("Digite a letra da primeira carta: ");
+    scanf(" %c", &estado_c1);  
+    printf("Digite o codigo da primeira carta: ");
+    scanf("%s", codigo_c1);
+    printf("Digite o nome da cidade da primeira carta: ");
+    scanf("%s", cidade_c1);
+    printf("Digite a populacao da primeira carta: ");
+    scanf("%d", &populacao_c1);
+    printf("Digite a area da primeira carta: ");
+    scanf("%f", &area_c1);
     printf("Digite o PIB da primeira carta: ");
-    scanf("%f", &carta1.pib);
-    printf("Digite o número de pontos turísticos da primeira carta: ");
-    scanf("%d", &carta1.pontos_turisticos);
+    scanf("%f", &pib_c1);
+    printf("Digite o numero de pontos turisticos da primeira carta: ");
+    scanf("%d", &pontos_c1);
 
     // Cadastro da segunda carta
-    printf("Digite o código da segunda carta: ");
-    scanf("%s", carta2.codigo);
-    printf("Digite a população da segunda carta: ");
-    scanf("%d", &carta2.populacao);
-    printf("Digite a área da segunda carta: ");
-    scanf("%f", &carta2.area);
+    printf("\nCadastro da Segunda Carta:\n");
+    printf("Digite a letra da segunda carta: ");
+    scanf(" %c", &estado_c2);  
+    printf("Digite o codigo da segunda carta: ");
+    scanf("%s", codigo_c2);
+    printf("Digite o nome da cidade da segunda carta: ");
+    scanf("%s", cidade_c2);
+    printf("Digite a populacao da segunda carta: ");
+    scanf("%d", &populacao_c2);
+    printf("Digite a area da segunda carta: ");
+    scanf("%f", &area_c2);
     printf("Digite o PIB da segunda carta: ");
-    scanf("%f", &carta2.pib);
-    printf("Digite o número de pontos turísticos da segunda carta: ");
-    scanf("%d", &carta2.pontos_turisticos);
+    scanf("%f", &pib_c2);
+    printf("Digite o numero de pontos turisticos da segunda carta: ");
+    scanf("%d", &pontos_c2);
 
     // Exibição dos dados das cartas cadastradas
-    printf("\nDados da primeira carta:\n");
-    printf("Código: %s\n", carta1.codigo);
-    printf("População: %d\n", carta1.populacao);
-    printf("Área: %.2f\n", carta1.area);
-    printf("PIB: %.2f\n", carta1.pib);
-    printf("Pontos turísticos: %d\n", carta1.pontos_turisticos);
+    printf("\n\nDados da Primeira Carta:\n");
+    printf("\nEstado: %c", estado_c1);
+    printf("\nCodigo: %s", codigo_c1);
+    printf("\nNome da Cidade: %s", cidade_c1);
+    printf("\nPopulacao: %d", populacao_c1);
+    printf("\nArea: %.2f", area_c1);
+    printf("\nPIB: %.2f", pib_c1);
+    printf("\nPontos turisticos: %d", pontos_c1);
 
-    printf("\nDados da segunda carta:\n");
-    printf("Código: %s\n", carta2.codigo);
-    printf("População: %d\n", carta2.populacao);
-    printf("Área: %.2f\n", carta2.area);
-    printf("PIB: %.2f\n", carta2.pib);
-    printf("Pontos turísticos: %d\n", carta2.pontos_turisticos);
+    printf("\n\nDados da Segunda Carta:\n");
+    printf("\nEstado: %c", estado_c2);
+    printf("\nCodigo: %s", codigo_c2);
+    printf("\nNome da Cidade: %s", cidade_c2);
+    printf("\nPopulacao: %d", populacao_c2);
+    printf("\nArea: %.2f", area_c2);
+    printf("\nPIB: %.2f", pib_c2);
+    printf("\nPontos turisticos: %d", pontos_c2);
 
     return 0;
 }
